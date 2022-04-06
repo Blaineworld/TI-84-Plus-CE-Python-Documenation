@@ -1,0 +1,265 @@
+# Character Set
+The TI-84 Plus CE Python's Python terminal supports 256 different characters.
+Most of them are standard ASCII characters; however, many are non-standard or do
+something special when printed. Some such characters may even be considered
+undesirable or dangerous to print. This file is dedicated to listing all 256
+characters that can be used.
+
+Currently, it is very incomplete because I don't have my calculator.
+
+- `00` 
+- `01` 
+- `02` 
+- `03` 
+- `04` 
+- `05` 
+- `06` 
+- `07` 
+- `08` 
+- `09` 
+- `0A`
+- `0B` 
+- `0C` 
+- `0D` 
+- `0E` 
+- `0F` 
+- `10` 
+- `11` 
+- `12` 
+- `13` 
+- `14` 
+- `15` 
+- `16` 
+- `17` 
+- `18` 
+- `19` 
+- `1A` 
+- `1B` 
+- `1C` 
+- `1D` 
+- `1E` 
+- `1F` 
+- `20` **Space** is a simple blank character.
+- `21` **!** Exclamation Point
+- `22` **"** Quotation Mark
+- `23` **#** Octothorpe
+- `24` **$** Dollar Sign
+- `25` **%** Percent Sign
+- `26` **&** Ampersand
+- `27` **'** Apostrophe
+- `28` **(** Left Parenthesis
+- `29` **)** Right Parenthesis
+- `2A` **\*** Asterisk
+- `2B` **+** Plus Sign
+- `2C` **,** Comma
+- `2D` **-** Dash
+- `2E` **.** Period
+- `2F` **/** Slash
+- `30` **0** Digit 0
+- `31` **1** Digit 1
+- `32` **2** Digit 2
+- `33` **3** Digit 3
+- `34` **4** Digit 4
+- `35` **5** Digit 5
+- `36` **6** Digit 6
+- `37` **7** Digit 7
+- `38` **8** Digit 8
+- `39` **9** Digit 9
+- `3A` **:** Colon
+- `3B` **;** Semicolon
+- `3C` **<** Less Than Symbol
+- `3D` **=** Equal To Symbol
+- `3E` **>** Greater Than Symbol
+- `3F` **?** Question Mark
+- `40` **@** At Symbol
+- `41` **A** Uppercase Letter A
+- `42` **B** Uppercase Letter B
+- `43` **C** Uppercase Letter C
+- `44` **D** Uppercase Letter D
+- `45` **E** Uppercase Letter E
+- `46` **F** Uppercase Letter F
+- `47` **G** Uppercase Letter G
+- `48` **H** Uppercase Letter H
+- `49` **I** Uppercase Letter I
+- `4A` **J** Uppercase Letter J
+- `4B` **K** Uppercase Letter K
+- `4C` **L** Uppercase Letter L
+- `4D` **M** Uppercase Letter M
+- `4E` **N** Uppercase Letter N
+- `4F` **O** Uppercase Letter O
+- `50` **P** Uppercase Letter P
+- `51` **Q** Uppercase Letter Q
+- `52` **R** Uppercase Letter R
+- `53` **S** Uppercase Letter S
+- `54` **T** Uppercase Letter T
+- `55` **U** Uppercase Letter U
+- `56` **V** Uppercase Letter V
+- `57` **W** Uppercase Letter W
+- `58` **X** Uppercase Letter X
+- `59` **Y** Uppercase Letter Y
+- `5A` **Z** Uppercase Letter Z
+- `5B` **[** Left Square Bracket
+- `5C` **\\** Backslash
+- `5D` **]** Right Square Bracket
+- `5E` **^** Caret
+- `5F` **_** Underscore
+- `60` **`** Grave Accent
+- `61` **a** Lowercase Letter A
+- `62` **b** Lowercase Letter B
+- `63` **c** Lowercase Letter C
+- `64` **d** Lowercase Letter D
+- `65` **e** Lowercase Letter E
+- `66` **f** Lowercase Letter F
+- `67` **g** Lowercase Letter G
+- `68` **h** Lowercase Letter H
+- `69` **i** Lowercase Letter I
+- `6A` **j** Lowercase Letter J
+- `6B` **k** Lowercase Letter K
+- `6C` **l** Lowercase Letter L
+- `6D` **m** Lowercase Letter M
+- `6E` **n** Lowercase Letter N
+- `6F` **o** Lowercase Letter O
+- `70` **p** Lowercase Letter P
+- `71` **q** Lowercase Letter Q
+- `72` **r** Lowercase Letter R
+- `73` **s** Lowercase Letter S
+- `74` **t** Lowercase Letter T
+- `75` **u** Lowercase Letter U
+- `76` **v** Lowercase Letter V
+- `77` **w** Lowercase Letter W
+- `78` **x** Lowercase Letter X
+- `79` **y** Lowercase Letter Y
+- `7A` **z** Lowercase Letter Z
+- `7B` **{** Left Curly Bracket
+- `7C` **|** Vertical Pipe
+- `7D` **}** Right Curly Bracket
+- `7E` **~** Tilde
+- `7F` 
+- `80` 
+- `81` 
+- `82` 
+- `83` 
+- `84` 
+- `85` 
+- `86` 
+- `87` 
+- `88` 
+- `89` 
+- `8A` 
+- `8B` 
+- `8C` 
+- `8D` 
+- `8E` 
+- `8F` 
+- `90` 
+- `91` 
+- `92` 
+- `93` 
+- `94` 
+- `95` 
+- `96` 
+- `97` 
+- `98` 
+- `99` 
+- `9A` 
+- `9B` 
+- `9C` 
+- `9D` 
+- `9E` 
+- `9F` 
+- `A0` 
+- `A1` 
+- `A2` 
+- `A3` 
+- `A4` 
+- `A5` 
+- `A6` 
+- `A7` 
+- `A8` 
+- `A9` 
+- `AA` 
+- `AB` 
+- `AC` 
+- `AD` 
+- `AE` 
+- `AF` 
+- `B0` 
+- `B1` 
+- `B2` 
+- `B3` 
+- `B4` 
+- `B5` 
+- `B6` 
+- `B7` 
+- `B8` 
+- `B9` 
+- `BA` 
+- `BB` 
+- `BC` 
+- `BD` 
+- `BE` 
+- `BF` 
+- `C0` 
+- `C1` 
+- `C2` 
+- `C3` 
+- `C4` 
+- `C5` 
+- `C6` 
+- `C7` 
+- `C8` 
+- `C9` 
+- `CA` 
+- `CB` 
+- `CC` 
+- `CD` 
+- `CE` 
+- `CF` 
+- `D0` 
+- `D1` 
+- `D2` 
+- `D3` 
+- `D4` 
+- `D5` 
+- `D6` 
+- `D7` 
+- `D8` 
+- `D9` 
+- `DA` 
+- `DB` 
+- `DC` 
+- `DD` 
+- `DE` 
+- `DF` 
+- `E0` 
+- `E1` 
+- `E2` 
+- `E3` 
+- `E4` 
+- `E5` 
+- `E6` 
+- `E7` 
+- `E8` 
+- `E9` 
+- `EA` 
+- `EB` 
+- `EC` 
+- `ED` 
+- `EE` 
+- `EF` 
+- `F0` 
+- `F1` 
+- `F2` 
+- `F3` 
+- `F4` 
+- `F5` 
+- `F6` 
+- `F7` 
+- `F8` 
+- `F9` 
+- `FA` 
+- `FB` 
+- `FC` 
+- `FD` 
+- `FE` 
+- `FF` 
