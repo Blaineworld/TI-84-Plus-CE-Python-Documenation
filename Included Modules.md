@@ -1,6 +1,18 @@
 # Included Modules
+
 This file is dedicated to listing the modules that are included in the Python
-app. Documentation for some of these modules can be found in the Modules folder.
-The ones that are not documented are as such either because they are already
-documented elsewhere online, or because I do not understand them or do not have
-the necessary tools to use them.
+app. Individual documentation for each module is in the Modules directory.
+
+- [`array`](./Modules/array.md)
+- [`builtins`](./Modules/builtins.md)
+- [`collections`](./Modules/collections.md)
+- [`gc`](./Modules/gc.md)
+- [`math`](./Modules/math.md)
+- [`random`](./Modules/random.md)
+- [`time`](./Modules/time.md)
+- [`sys`](./Modules/sys.md)
+- [`ti_graphics`](./Modules/ti_graphics.md)
+- [`ti_hub`](./Modules/ti_hub.md)
+- [`ti_plotlib`](./Modules/ti_plotlib.md)
+- [`ti_rover`](./Modules/ti_rover.md)
+- [`ti_system`](./Modules/ti_system.md)

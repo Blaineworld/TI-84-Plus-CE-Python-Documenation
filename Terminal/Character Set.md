@@ -1,44 +1,60 @@
 # Character Set
+
 The TI-84 Plus CE Python's Python terminal supports 256 different characters.
 Most of them are standard ASCII characters; however, many are non-standard or do
 something special when printed. Some such characters may even be considered
 undesirable or dangerous to print. This file is dedicated to listing all 256
 characters that can be used.
 
-Currently, it is very incomplete because I don't have my calculator.
+The greatest possible character code is 1,048,575 (2 \*\* 20 - 1). All
+characters greater than 255 and many control characters render as small empty
+squares in the center of the character cell (▫).
 
-- `00` 
-- `01` 
-- `02` 
+## List of Characters
+
+- `00` **▫**
+- `01` **▫**
+- `02` **▫**
 - `03` 
-- `04` 
-- `05` 
-- `06` 
-- `07` 
-- `08` 
-- `09` 
-- `0A`
-- `0B` 
-- `0C` 
-- `0D` 
-- `0E` 
-- `0F` 
-- `10` 
-- `11` 
-- `12` 
-- `13` 
-- `14` 
-- `15` 
-- `16` 
-- `17` 
-- `18` 
-- `19` 
-- `1A` 
-- `1B` 
-- `1C` 
-- `1D` 
-- `1E` 
-- `1F` 
+- `04` **▫**
+- `05` **▫**
+- `06` **▫**
+- `07` **▫**
+- `08` moves the cursor to the left one cell. If the cursor is already at the
+  left edge of the terminal, it moves to the rightmost cell of the line above.
+  If it is already at the top-left edge of the terminal, it does not move.
+- `09` behaves identically to two spaces.
+- `0A` moves the cursor to the left edge of the line below. This is the only
+  character that can scroll the terminal.
+- `0B` **▫**
+- `0C` **▫**
+- `0D` appears to do nothing at all. It does not render as anything and does not
+  even move the cursor.
+- `0E` appears to do nothing, just like `0D`. 
+- `0F` appears to do nothing, just like `0D`.
+- `10` **▫**
+- `11` **▫**
+- `12` **▫**
+- `13` **▫**
+- `14` freezes the program and the terminal. It is possible to restore normal
+  functionality by pressing *on* or *2nd + mode*, then pressing one of the
+  function keys to switch to another section of the app.
+- `15` **▫**
+- `16` **▫**
+- `17` appears to do nothing, just like `0D`. 
+- `18` **▫**
+- `19` appears to do nothing, just like `0D`.
+- `1A` **▫**
+- `1B` begins an [ANSI escape code](./Ansi%20Escape%20Codes.md). It always
+  causes the character after it to be skipped, and if it is the beginning of a
+  valid ANSI escape code, skips the entire escape code.
+- `1C` freezes the program and the terminal. The calculator is completely
+  softlocked at this point, and you will have to press the reset button on the
+  back to restore normal functionality. There will be garbled pixels at the top
+  of the prompt once it has reset, which can be removed by pressing *clear*.
+- `1D` freezes the program and terminal in an identical way to `14`.
+- `1E` appears to do nothing, just like `0D`.
+- `1F` **▫**
 - `20` **Space** is a simple blank character.
 - `21` **!** Exclamation Point
 - `22` **"** Quotation Mark
@@ -67,199 +83,183 @@ Currently, it is very incomplete because I don't have my calculator.
 - `39` **9** Digit 9
 - `3A` **:** Colon
 - `3B` **;** Semicolon
-- `3C` **<** Less Than Symbol
-- `3D` **=** Equal To Symbol
-- `3E` **>** Greater Than Symbol
+- `3C` **<** Less Than Sign
+- `3D` **=** Equal To Sign
+- `3E` **>** Greater Than Sign
 - `3F` **?** Question Mark
-- `40` **@** At Symbol
-- `41` **A** Uppercase Letter A
-- `42` **B** Uppercase Letter B
-- `43` **C** Uppercase Letter C
-- `44` **D** Uppercase Letter D
-- `45` **E** Uppercase Letter E
-- `46` **F** Uppercase Letter F
-- `47` **G** Uppercase Letter G
-- `48` **H** Uppercase Letter H
-- `49` **I** Uppercase Letter I
-- `4A` **J** Uppercase Letter J
-- `4B` **K** Uppercase Letter K
-- `4C` **L** Uppercase Letter L
-- `4D` **M** Uppercase Letter M
-- `4E` **N** Uppercase Letter N
-- `4F` **O** Uppercase Letter O
-- `50` **P** Uppercase Letter P
-- `51` **Q** Uppercase Letter Q
-- `52` **R** Uppercase Letter R
-- `53` **S** Uppercase Letter S
-- `54` **T** Uppercase Letter T
-- `55` **U** Uppercase Letter U
-- `56` **V** Uppercase Letter V
-- `57` **W** Uppercase Letter W
-- `58` **X** Uppercase Letter X
-- `59` **Y** Uppercase Letter Y
-- `5A` **Z** Uppercase Letter Z
+- `40` **@** At Sign
+- `41` **A** Uppercase A
+- `42` **B** Uppercase B
+- `43` **C** Uppercase C
+- `44` **D** Uppercase D
+- `45` **E** Uppercase E
+- `46` **F** Uppercase F
+- `47` **G** Uppercase G
+- `48` **H** Uppercase H
+- `49` **I** Uppercase I
+- `4A` **J** Uppercase J
+- `4B` **K** Uppercase K
+- `4C` **L** Uppercase L
+- `4D` **M** Uppercase M
+- `4E` **N** Uppercase N
+- `4F` **O** Uppercase O
+- `50` **P** Uppercase P
+- `51` **Q** Uppercase Q
+- `52` **R** Uppercase R
+- `53` **S** Uppercase S
+- `54` **T** Uppercase T
+- `55` **U** Uppercase U
+- `56` **V** Uppercase V
+- `57` **W** Uppercase W
+- `58` **X** Uppercase X
+- `59` **Y** Uppercase Y
+- `5A` **Z** Uppercase Z
 - `5B` **[** Left Square Bracket
 - `5C` **\\** Backslash
 - `5D` **]** Right Square Bracket
 - `5E` **^** Caret
 - `5F` **_** Underscore
 - `60` **`** Grave Accent
-- `61` **a** Lowercase Letter A
-- `62` **b** Lowercase Letter B
-- `63` **c** Lowercase Letter C
-- `64` **d** Lowercase Letter D
-- `65` **e** Lowercase Letter E
-- `66` **f** Lowercase Letter F
-- `67` **g** Lowercase Letter G
-- `68` **h** Lowercase Letter H
-- `69` **i** Lowercase Letter I
-- `6A` **j** Lowercase Letter J
-- `6B` **k** Lowercase Letter K
-- `6C` **l** Lowercase Letter L
-- `6D` **m** Lowercase Letter M
-- `6E` **n** Lowercase Letter N
-- `6F` **o** Lowercase Letter O
-- `70` **p** Lowercase Letter P
-- `71` **q** Lowercase Letter Q
-- `72` **r** Lowercase Letter R
-- `73` **s** Lowercase Letter S
-- `74` **t** Lowercase Letter T
-- `75` **u** Lowercase Letter U
-- `76` **v** Lowercase Letter V
-- `77` **w** Lowercase Letter W
-- `78` **x** Lowercase Letter X
-- `79` **y** Lowercase Letter Y
-- `7A` **z** Lowercase Letter Z
+- `61` **a** Small A
+- `62` **b** Small B
+- `63` **c** Small C
+- `64` **d** Small D
+- `65` **e** Small E
+- `66` **f** Small F
+- `67` **g** Small G
+- `68` **h** Small H
+- `69` **i** Small I
+- `6A` **j** Small J
+- `6B` **k** Small K
+- `6C` **l** Small L
+- `6D` **m** Small M
+- `6E` **n** Small N
+- `6F` **o** Small O
+- `70` **p** Small P
+- `71` **q** Small Q
+- `72` **r** Small R
+- `73` **s** Small S
+- `74` **t** Small T
+- `75` **u** Small U
+- `76` **v** Small V
+- `77` **w** Small W
+- `78` **x** Small X
+- `79` **y** Small Y
+- `7A` **z** Small Z
 - `7B` **{** Left Curly Bracket
 - `7C` **|** Vertical Pipe
 - `7D` **}** Right Curly Bracket
 - `7E` **~** Tilde
-- `7F` 
-- `80` 
-- `81` 
-- `82` 
-- `83` 
-- `84` 
-- `85` 
-- `86` 
-- `87` 
-- `88` 
-- `89` 
-- `8A` 
-- `8B` 
-- `8C` 
-- `8D` 
-- `8E` 
-- `8F` 
-- `90` 
-- `91` 
-- `92` 
-- `93` 
-- `94` 
-- `95` 
-- `96` 
-- `97` 
-- `98` 
-- `99` 
-- `9A` 
-- `9B` 
-- `9C` 
-- `9D` 
-- `9E` 
-- `9F` 
-- `A0` 
-- `A1` 
-- `A2` 
-- `A3` 
-- `A4` 
-- `A5` 
-- `A6` 
-- `A7` 
-- `A8` 
-- `A9` 
-- `AA` 
-- `AB` 
-- `AC` 
-- `AD` 
-- `AE` 
-- `AF` 
-- `B0` 
-- `B1` 
-- `B2` 
-- `B3` 
-- `B4` 
-- `B5` 
-- `B6` 
-- `B7` 
-- `B8` 
-- `B9` 
-- `BA` 
-- `BB` 
-- `BC` 
-- `BD` 
-- `BE` 
-- `BF` 
-- `C0` 
-- `C1` 
-- `C2` 
-- `C3` 
-- `C4` 
-- `C5` 
-- `C6` 
-- `C7` 
-- `C8` 
-- `C9` 
-- `CA` 
-- `CB` 
-- `CC` 
-- `CD` 
-- `CE` 
-- `CF` 
-- `D0` 
-- `D1` 
-- `D2` 
-- `D3` 
-- `D4` 
-- `D5` 
-- `D6` 
-- `D7` 
-- `D8` 
-- `D9` 
-- `DA` 
-- `DB` 
-- `DC` 
-- `DD` 
-- `DE` 
-- `DF` 
-- `E0` 
-- `E1` 
-- `E2` 
-- `E3` 
-- `E4` 
-- `E5` 
-- `E6` 
-- `E7` 
-- `E8` 
-- `E9` 
-- `EA` 
-- `EB` 
-- `EC` 
-- `ED` 
-- `EE` 
-- `EF` 
-- `F0` 
-- `F1` 
-- `F2` 
-- `F3` 
-- `F4` 
-- `F5` 
-- `F6` 
-- `F7` 
-- `F8` 
-- `F9` 
-- `FA` 
-- `FB` 
-- `FC` 
-- `FD` 
-- `FE` 
-- `FF` 
+- `7F` renders as a space.
+- `80` **▫** Small Empty Square
+- `81` **⬩** Small Filled Diamond
+- `82` **◂** Left-Pointing Arrow Head
+- `83` **▸** Right-Pointing Arrow Head
+- `84` **▴** Up-Pointing Arrow Head
+- `85` **▾** Down-Pointing Arrow Head
+- `86` **…** Ellipsis
+- `87` **␣** Open Box
+- `88` **_** Cursor (It's lower than the normal underscore.)
+- `89` **A̲** Capital Alphabet Cursor
+- `8A` **a̲** Small Alphabet Cursor
+- `8B` **↥** 2nd Cursor
+- `8C` **▒** Medium Shade
+- `8D` **↑** Up-Pointing Arrow
+- `8E` **↓** Down-Pointing Arrow
+- `8F` **∠** Angle Sign
+- `90`-`A0` render as spaces.
+- `A1` **¡** Inverted Exclamation Point
+- `A2` **¢** Cent Sign
+- `A3` **£** Pound Sign
+- `A4` **¤** Currency Sign
+- `A5` **¥** Yen Sign
+- `A6` **¦** Broken Bar
+- `A7` **§** Section Sign
+- `A8` **¨** Diaeresis
+- `A9` **©** Copyright Sign
+- AA **ª** Feminine Ordinal Indicator
+- AB **«** Left-Pointing Double Angle Quoation Mark
+- AC **¬** Not Sign
+- AD appears to do nothing, just like `0D`. 
+- AE **®** Registered Sign
+- AF **¯** Macron
+- B0 **°** Degree Sign
+- B1 **±** Plus or Minus Sign
+- B2 **²** Superscript Digit 2
+- B3 **³** Superscript Digit 3
+- B4 **´** Acute Accent
+- B5 **µ** Micro Sign
+- B6 **¶** Pilcrow
+- B7 **·** Middle Dot
+- B8 **¸** Cedilla
+- B9 **¹** Superscript Digit 1
+- BA **º** Masculine Ordinal Indicator
+- BB **»** Right-Pointing Double Angle Quotation Mark
+- BC **¼** Vulgar Fraction 1/4
+- BD **½** Vulgar Fraction 1/2
+- BE **¾** Vulgar Fraction 3/4
+- BF **¿** Inverted Question Mark
+- C0 **À** Capital A With Grave Accent
+- C1 **Á** Capital A With Acute Accent
+- C2 **Â** Capital A With Circumflex
+- C3 **Ã** Capital A With Tilde
+- C4 **Ä** Capital A With Diaeresis
+- C5 **Å** Capital A With Ring Above
+- C6 **Æ** Capital Ae
+- C7 **Ç** Capital C With Cedilla
+- C8 **È** Capital E With Grave Accent
+- C9 **É** Capital E With Accute Accent
+- CA **Ê** Capital E With Circumflex
+- CB **Ë** Capital E With Diaeresis
+- CC **Ì** Capital I with Grave Accent
+- CD **Í** Capital I With Acute Accent
+- CE **Î** Capital I With Circumflex
+- CF **Ï** Capital I With Diaeresis
+- D0 **Ð** Capital Eth
+- D1 **Ñ** Capital N With Tilde
+- D2 **Ò** Capital O With Grave Accent
+- D3 **Ó** Capital O With Accute Acent
+- D4 **Ô** Capital O With Circumflex
+- D5 **Õ** Capital O With Tilde
+- D6 **Ö** Capital O With Diaeresis
+- D7 **×** Multiplication Sign
+- D8 **Ø** Capital O With Stroke
+- D9 **Ù** Capital U With Grave Accent
+- DA **Ú** Capital U With Acute Accent
+- DB **Û** Capital U With Circumflex
+- DC **Ü** Capital U With Diaeresis
+- DD **Ý** Capital Y With Acute Accent
+- DE **Þ** Capital Thorn
+- DF **ß** Small Sharp S
+- E0 **à** Small A With Grave Accent
+- E1 **á** Small A With Acute Accent
+- E2 **â** Small A With Circumflex
+- E3 **ã** Small A With Tilde
+- E4 **ä** Small A With Diaeresis
+- E5 **å** Small A With Dot Above
+- E6 **æ** Small Ae
+- E7 **ç** Small A With Cedilla
+- E8 **è** Small E With Grave Accent
+- E9 **é** Small E With Acute Accent
+- EA **ê** Small E With Circumflex
+- EB **ë** Small E With Diaeresis
+- EC **ì** Small I With Grave Accent
+- ED **í** Small I With Acute Accent
+- EE **î** Small I With Circumflex
+- EF **ï** Small I With Diaeresis
+- F0 **ð** Small Eth
+- F1 **ñ** Small N With Tilde
+- F2 **ò** Small O With Grave Accent
+- F3 **ó** Small O With Acute Accent
+- F4 **ô** Small O With Circumflex
+- F5 **õ** Small O With Tilde
+- F6 **ö** Small O With Diaeresis
+- F7 **÷** Division Sign
+- F8 **ø** Small O With Stroke
+- F9 **ù** Small U With Grave Accent
+- FA **ú** Small U With Acute Accent
+- FB **û** Small U With Circumflex
+- FC **ü** Small U With Diaeresis
+- FD **ý** Small Y With Acute Accent
+- FE **þ** Small Thorn
+- FF **ÿ** Small Y With Diaeresis
